@@ -23,7 +23,5 @@
     "precommit-hook": "^3.0.0",
     "standard": "^10.0.3"
   },
-  "dependencies": {
-    "express": "^4.16.2"
-  }
+  "dependencies": {}
 }
