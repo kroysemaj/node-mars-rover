@@ -7,7 +7,8 @@
     "test": "ava",
     "lint": "standard",
     "dev": "chokidar '**/*.js' -c 'standard --fix; standard; clear; ava'",
-    "fix": "standard --fix"
+    "fix": "standard --fix",
+    "validate": "npm ls"
   },
   "keywords": [],
   "author": "",
