@@ -11,4 +11,4 @@ Requires NodeJS
 All the test _should_ pass
 
 #### Ask me about my dinosaur testing!
-!(dino.jpg)[]
+![](dino.jpg)
