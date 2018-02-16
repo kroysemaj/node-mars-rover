@@ -22,6 +22,10 @@ function processCommand (command, rover) {
     rover.coords = handleForward(command, rover)
   }
 
+  if (command === 'b') {
+    rover.coords = handleBackward(command, rover)
+  }
+
   if (command === 'l' || command === 'r') {
     rover.heading = handleTurn(command, rover)
   }
@@ -48,16 +52,39 @@ function handleForward (command, rover) {
 
   switch (rover.heading) {
     case 'N':
-      coords.x += 1
-      break
-    case 'E':
       coords.y += 1
       break
+    case 'E':
+      coords.x += 1
+      break
     case 'S':
-      coords.x -= 1
+      coords.y -= 1
       break
     case 'W':
+      coords.x -= 1
+      break
+  }
+  return coords
+}
+
+function handleBackward (command, rover) {
+  let coords = {
+    x: rover.coords.x,
+    y: rover.coords.y
+  }
+
+  switch (rover.heading) {
+    case 'N':
       coords.y -= 1
+      break
+    case 'E':
+      coords.x -= 1
+      break
+    case 'S':
+      coords.y += 1
+      break
+    case 'W':
+      coords.x += 1
       break
   }
   return coords
