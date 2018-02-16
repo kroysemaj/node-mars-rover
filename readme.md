@@ -9,3 +9,6 @@ Requires NodeJS
 1. To run the test suite, run `npm test`
 
 All the test _should_ pass
+
+#### Ask me about my dinosaur testing!
+!(dino.jpg)[]
